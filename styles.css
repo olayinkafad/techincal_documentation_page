@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    }
+    body{
+    font-family: Helvetica Neue, "sans-serif";
+    width: 100%;
+    margin: 0;
+  background-color: #FFFFFF;
+    color: #333333;
+  }
+  /**#main-doc{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }**/
+  
+  #navbar{
+    min-width: 300px; 
+    height: 100%;
+    border: 1px solid #DCE0E4;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    overflow-y: scroll;
+    background-color: #FFFFFF;
+  }
+  #main-header{
+    background-color: #FFFFFF;
+    border: 1px solid transparent;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 10px;
+  }
+  #main-header h1{
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  [class = "nav-link"]{
+    text-decoration: none;
+    color: #333333;
+  }
+  /**
+  .first-nav{
+    color: #0BBF53;
+    text-decoration: none;
+  }**/
+  #navbar > ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #navbar li{
+    padding: 10px 20px 10px 20px; 
+    font-weight: bold;
+  }
+  #navbar li:hover{
+    cursor: pointer;
+    background-color: #E5F7ED;
+    border: 1px solid transparent;
+  }
+  #navbar a:active{
+    color: #0BBF53;
+  }
+  #navbar a:hover{
+    color: #0BBF53;
+  }
+  .section-container{
+    padding-left: 20px;
+    padding-right: 20px; 
+    position: absolute;
+    left: 300px;
+  }
+  .main-section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .main-section, h2{
+    font-size: 1.2rem;
+  }
+  .mainsection, p{
+    line-height: 1.7em;
+    font-size: 0.95rem;
+  }
+  #main-doc, li{
+    line-height: 1.7em;
+    font-size: 0.95rem;
+  }
+  hr{
+    border: none;
+    border-top: 1px solid #DCE0E4;
+  }
+  pre {
+    background-color: #E5F7ED;
+    border: 1px solid #0BBF53;
+    border-radius: 4px;
+    padding: 10px;
+    overflow: auto;
+  }
+  code {
+    font-family: monospace, "sans-serif";
+    color: #0BBF53;
+    line-height: 1.7em;
+    font-size: 0.8rem;
+  }
+  
+  /* For mobile phones: */
+  @media (max-width: 640px) {
+    #main-header{
+      border-bottom: 1px solid #DCE0E4;
+    }
+    #navbar{
+      height: 30%;
+      width: 100%;
+      border: 1px solid #DCE0E4;
+    }
+    .section-container{
+      position: relative;
+      top: 250px;
+      left: 0;
+      padding-bottom: 5px; 
+    }
+    }
